@@ -1,0 +1,45 @@
+button {
+	padding: 5px 10px;
+	cursor: pointer;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.ttt-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.board {
+	position: relative;
+	display: flex;
+	flex-flow: wrap;
+	margin-top: 10px;
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+.visible {
+	opacity: 1;
+}
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+	cursor: unset;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: transparent;
+	transition: background 0.3s ease-in;
+}
+.box.active:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.active {
+	background: rgba(255, 255, 255, 0.1);
+}
